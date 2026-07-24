@@ -1,0 +1,308 @@
+.opening-container{
+    background-color: #FFFCF5;
+    height: 100vh;
+    position:relative;
+    overflow:hidden;
+}
+
+.background-container{
+    width:100%;
+    height:100%;
+    position:absolute;
+    inset:0;
+    z-index:0;
+
+    display:flex;
+    align-items:center;
+}
+
+.content-container{
+    width:100%;
+    height:100%;
+    position:relative;
+    z-index:1;
+
+    display:flex;
+    flex-direction: row;
+}
+
+.left-side{
+    position: relative;
+    flex:1;
+}
+
+.right-side{
+    position: relative;
+    flex:1;
+}
+
+.center{
+    height:fit-content;
+    position:relative;
+    margin:auto;
+    width: var(--center-width);
+    
+    display:flex; 
+    flex-direction: column;
+    align-items: center; 
+    row-gap:var(--center-gap);
+}
+
+.leaf-bg-image{
+    object-fit: contain;
+    width:var(--leaf-width);
+    opacity: 5%;
+    height:auto;
+}
+
+.jasmine{
+    height:auto;
+    position:absolute;
+    width:var(--jasmine-width);
+    left:0;
+    top:0;
+    animation: jasmine 3s cubic-bezier(0.61, 0, 0.3, 0.99) forwards;
+}
+
+.small-coco-tree{
+    height:auto;
+    width:var(--smallcoco-width);
+    position:absolute;
+    animation: smallCoco 3s cubic-bezier(0.61, 0, 0.3, 0.99) forwards;
+}
+
+.big-coco-tree{
+    height:auto;
+    width:var(--bigcoco-width);
+    position:absolute;
+    animation: bigCoco 3s cubic-bezier(0.61, 0, 0.3, 0.99) forwards;
+}
+
+.lotus{
+    bottom:0;
+    height:auto;
+    position:absolute;
+    width:var(--lotus-width);
+    animation: lotus 3s cubic-bezier(0.61, 0, 0.3, 0.99) forwards;
+}
+
+.ganesha{
+    object-fit: contain;
+    width: var(--ganesha-width);
+    height:auto;
+    animation: ganesha 3s cubic-bezier(0.61, 0, 0.3, 0.99) forwards;
+}
+
+.pillar{
+    height:auto;
+    position:absolute;
+    width:var(--pillar-width);
+    top: var(--pillar-top);
+    animation: pillar 3s cubic-bezier(0.61, 0, 0.3, 0.99) forwards;
+}
+
+.marigolds{
+    height:auto;
+    position:absolute;
+    width:var(--marigolds-width);
+    top:0;
+    animation: marigolds 3s cubic-bezier(0.61, 0, 0.3, 0.99) forwards;
+}
+
+.pots{
+    height:auto;
+    position:absolute;
+    width:var(--pots-width);
+    bottom:-2%;
+    animation: pots 3s cubic-bezier(0.61, 0, 0.3, 0.99) forwards;
+}
+
+.kolam{
+    position:absolute;
+    width:var(--kolam-width);
+    left:50%;
+    z-index: 100;
+    animation: kolam 3s cubic-bezier(0.61, 0, 0.3, 0.99) forwards;
+}
+
+.intro-content{
+    position:relative;
+    color: #252B37;
+    width:var(--introcontent-width);
+    
+    display:flex; 
+    flex-direction: column; 
+    row-gap: var(--intro-gap); 
+    align-items: center;
+    animation: introContent 3s cubic-bezier(0.61, 0, 0.3, 0.99) forwards;
+}
+
+
+.parents-introduce{ 
+    margin:8px;
+    flex:1; 
+    display:flex; 
+    flex-direction: column; 
+    row-gap:var(--parents-introduce-rowgap);
+    align-items: center; 
+} 
+
+.ratnaandsai{ 
+    display:flex; 
+    flex-direction: column; 
+    row-gap:var(--ratnaandsai-rowgap);
+    align-items: center; 
+}
+
+.and-cont{ 
+    flex:1; 
+} 
+
+.mom-and-dad{ 
+    flex:1; 
+    font-size: var(--parent-size); 
+    font-weight:bold; 
+    margin:0; 
+    font-family:"Lora", serif; 
+} 
+.cordially-invite{ 
+    width:90%;
+    flex:1; 
+    font-size: var(--body-size);
+    font-style:italic; 
+    margin:0; 
+    text-align: center;
+} 
+
+.addressing-and-name-cont{ 
+    flex:1; 
+    display:flex; 
+    flex-direction: row; 
+    column-gap:clamp(10px,3vw,16px); 
+    align-items: center; 
+}
+
+.theiraddressing{ 
+    font-size: var(--body-size);
+    margin:0; 
+} 
+    
+.theirname{ 
+    flex:1; 
+    font-size:var(--name-size);
+    font-family:"Alex Brush", cursive; 
+    margin:0; 
+} 
+
+.and{ 
+    flex:1; 
+    font-size:clamp(14px,4vw,16px); 
+    margin:0; 
+}
+
+.hismom-and-dad{
+    flex:1; 
+    font-size: var(--body-size); 
+    margin:0; 
+}
+
+/*---KEYFRAMES---*/
+@keyframes jasmine {
+    from{
+        transform: translate(var(--jasmine-startx), var(--jasmine-starty));
+    }
+
+    to{
+        transform: translate(var(--jasmine-endx), var(--jasmine-endy));
+    }
+}
+
+@keyframes smallCoco {
+    from{
+        transform: translate(var(--smallcoco-startx),var(--smallcoco-starty));
+    }
+
+    to{
+        transform: translate(var(--smallcoco-endx),var(--smallcoco-endy));
+    }
+}
+
+@keyframes bigCoco {
+    from{
+        transform: translate(var(--bigcoco-startx),var(--bigcoco-starty));
+    }
+
+    to{
+        transform: translate(var(--bigcoco-endx),var(--bigcoco-endy));
+    }
+}
+
+@keyframes lotus {
+    from{
+        transform: translate(var(--lotus-startx),var(--lotus-starty));
+    }
+
+    to{
+        transform: translate(var(--lotus-endx),var(--lotus-endy));
+    }
+}
+
+@keyframes ganesha {
+    from{
+        transform: translateY(var(--ganesha-start)) scale(var(--ganesha-start-size));
+    }
+
+    to{
+        transform: translateY(var(--ganesha-end) scale(var(--ganesha-end-size)));
+    }
+}
+
+@keyframes pillar {
+    from{
+        transform: translate(var(--pillar-startx),var(--pillar-starty));
+    }
+
+    to{
+        transform: translate(var(--pillar-endx),var(--pillar-endy));
+    }
+}
+
+@keyframes marigolds {
+    from{
+        transform: translate(var(--marigolds-startx),var(--marigolds-starty));
+    }
+
+    to{
+        transform: translate(var(--marigolds-endx),var(--marigolds-endy));
+    }
+}
+
+@keyframes pots {
+    from{
+        transform: translate(var(--pots-startx),var(--pots-starty));
+    }
+
+    to{
+        transform: translate(var(--pots-endx),var(--pots-endy));
+    }
+}
+
+@keyframes kolam {
+    from{
+        transform: translate(var(--kolam-startx),var(--kolam-starty));
+    }
+
+    to{
+        transform: translate(var(--kolam-endx),var(--kolam-endy));
+    }
+}
+
+@keyframes introContent {
+    from{
+        transform: translateY(var(--introcontent-start));
+    }
+
+    to{
+        transform: translateY(var(--introcontent-end));
+    }
+}

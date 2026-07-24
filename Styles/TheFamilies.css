@@ -1,0 +1,161 @@
+.the-families-cont{
+    background-color: #FFFCF5;
+    display:flex;
+    flex-direction: column;
+    position:relative;
+    align-items: center;
+}
+
+.left-top-decor{
+    position:absolute;
+    width:clamp(62px,17vw,311px);
+    top:0%;
+    left:0%;
+}
+
+.right-top-decor{
+    position:absolute;
+    width:clamp(62px,17vw,311px);
+    top:0%;
+    right:0%;
+}
+
+.fam-bottom-decor{
+    width:100%;
+    position:absolute;
+    bottom:0;
+}
+
+.families-main-content{
+    margin:10vw 5vw;
+
+    display:flex;
+    flex-direction: column;
+    padding:0;
+    row-gap: clamp(32px,9vw,64px);
+}
+
+.families-header-cont{
+    display:flex;
+    flex-direction: column;
+    padding:0;
+    align-items: center;
+    row-gap: clamp(8px,2vw,12px);
+}
+
+.families-subtitle{
+    font-style:italic;
+    font-size:clamp(14px,4vw,24px);
+    margin:0;
+    color: #414651;
+}
+
+.families-header{
+    font-family:"Lora", serif;
+    font-weight:600;
+    font-size:clamp(20px,5vw,36px);
+    margin:0;
+    color: #252B37;
+}
+
+.family-boxes-cont{
+    display:flex;
+    flex-direction: column;
+    row-gap:24px;
+    align-items: center;
+}
+
+.gold-box-cont{
+    width:clamp(220px,61vw,464px);
+    aspect-ratio: 4/3;
+    position:relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gold-box-main-cont{
+    position:relative;
+    z-index:1;
+
+    width:80%;
+    padding: 0 clamp(8px,2vw,12px);
+
+    display:flex;
+    flex-direction: column;
+    row-gap:clamp(8px,2vw,16px);
+    align-items: center;
+
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.gold-box{
+    position:absolute;
+    inset: 0;
+    width:100%;
+    height: 100%;
+}
+
+.gb-line1{
+    font-style:italic;
+    font-size:clamp(10px,3vw,16px);
+    margin:0;
+    color:#535862;
+}
+
+.gb-line2-cont{
+    display:flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: center;
+    column-gap:4px;
+    flex-wrap: nowrap;
+}
+
+.gb-addressing,
+.gb-name{
+    white-space: nowrap;
+}
+
+.gb-addressing{
+    font-style:italic;
+    font-size:clamp(10px,2vw,14px);
+    margin:0;
+    color:#252B37;
+}
+
+.gb-name{
+    font-family:"Lora", serif;
+    font-weight:600;
+    font-size:clamp(12px,3vw,24px);
+    margin:0;
+    color:#252B37;
+}
+
+.gb-family-info{
+    font-size:clamp(12px,3vw,20px);
+    color: #535862;
+    text-align: center;
+    margin:0;
+}
+
+.family-video-cont{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.save-the-date-video{
+    width:clamp(296px,82vw,800px);
+}
+
+@media (min-width:1200px) {
+    .family-boxes-cont{
+        flex-direction: row;
+        column-gap:100px;
+    }
+}

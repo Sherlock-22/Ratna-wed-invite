@@ -1,0 +1,72 @@
+.closing-section{
+    display:flex;
+    background-color: #5E1F2D;
+    padding: clamp(32px,9vw,94px) clamp(32px,9vw,274px);
+}
+
+.cs-main-content{
+    width:100%;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap:clamp(42px,12vw,58px);
+}
+
+.seek-bless{
+    font-style: italic;
+    font-size:clamp(14px,4vw,24px);
+    text-align:center;
+    color:#FDFDFD;
+    margin:0;
+}
+
+.date{
+   font-family: "Alex Brush", cursive;
+   font-size:clamp(20px,5vw,76px);
+   color:#F7E7C4;
+   margin:0;
+}
+
+.timer-main-cont{
+    display:flex;
+    padding: 0 20px;
+    flex-direction: row;
+    column-gap:clamp(20px,2vw,12px);
+    align-items: center;
+    justify-content: center;
+}
+
+.ind-timer-cont{
+    display:flex;
+    flex-direction: column;
+    row-gap:clamp(14px,5vw,24px);
+    align-items: center;
+}
+
+.timer-cont{
+    width:clamp(42px,12vw,60px);
+    height:clamp(42px,12vw,60px);
+    border: 2px solid #F8F9FC;
+    border-radius:8px;
+
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
+}
+
+.timer{
+    color: #F8F9FC;
+    margin:0;
+    font-family:"Lora", serif;
+    font-weight:700;
+    font-size:clamp(14px,4vw,20px);
+}
+
+.timer-classification{
+    color: #F8F9FC;
+    margin:0;
+    font-weight:600;
+    font-size:clamp(12px,3vw,16px);
+}
