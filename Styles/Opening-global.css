@@ -206,7 +206,45 @@
     margin:0; 
 }
 
+.scroll-hint-cont{
+    position:fixed;
+    bottom:2%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+    opacity:0;
+
+    pointer-events:none;
+
+    display:flex;
+    flex-direction: row;
+    column-gap:4px;
+}
+
+.heart{
+    width:32px;
+    animation: heartBounce 1.2s ease-in-out infinite alternate;
+}
+
+.scroll-content{
+    font-size:20px;
+    color:#252B37;
+}
+
+.scroll-hint-cont.visible{
+    opacity:100;
+}
+
 /*---KEYFRAMES---*/
+@keyframes heartBounce{
+    from{
+        transform:translateY(0);
+    }
+    to{
+        transform:translateY(6px);
+    }
+}
+
 @keyframes jasmine {
     from{
         transform: translate(var(--jasmine-startx), var(--jasmine-starty));
