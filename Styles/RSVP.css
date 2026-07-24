@@ -139,6 +139,7 @@
     height:clamp(32px,9vw,40px);
 
     font-family: "Source Sans 3", sans-serif;
+    font-size:clamp(12px,3vw,16px);  
     background-color: #F8F9FC;
     border: 1px solid #D5D7DA;
     border-radius:6px;
@@ -151,7 +152,6 @@
 
 .field::placeholder{
     color:#535862;
-    font-size:clamp(12px,3vw,14px);  
 }
 
 .field:hover{
