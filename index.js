@@ -12,7 +12,7 @@ setTimeout(()=>{
     if(window.scrollY === 0) {
         scrollHint.classList.add("visible");
     };
-},2000);
+},5000);
 
 document.body.addEventListener('scroll', () => {
   scrollHint.classList.remove("visible");
