@@ -1,13 +1,5 @@
 const scrollHint = document.querySelector('.scroll-hint-cont');
 
-window.addEventListener("load", () => {
-    document.body.style.overflow = 'hidden';
-
-    setTimeout(() => {
-        document.body.style.overflowY = "auto";
-    }, 3000);
-});
-
 setTimeout(()=>{
     if(window.scrollY === 0) {
         scrollHint.classList.add("visible");
