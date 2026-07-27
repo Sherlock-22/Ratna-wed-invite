@@ -5,20 +5,17 @@ window.addEventListener("load", () => {
 
     setTimeout(() => {
         document.body.style.overflowY = "auto";
-
-        setTimeout(()=>{
-           if(window.scrollY === 0) {
-            scrollHint.classList.add("visible");
-           }  
-        },2000);
     }, 3000);
 });
 
-window.addEventListener("scroll", () => {
-    console.log(window.scrollY);
-    if(window.scrollY > 0) {
-        scrollHint.classList.remove("visible");
-    }
+setTimeout(()=>{
+    if(window.scrollY === 0) {
+        scrollHint.classList.add("visible");
+    };
+},2000);
+
+document.body.addEventListener('scroll', () => {
+  scrollHint.classList.remove("visible");
 });
 
 const swingVideo = document.querySelector('.swing-video');
