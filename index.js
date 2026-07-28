@@ -1,5 +1,9 @@
 const scrollHint = document.querySelector('.scroll-hint-cont');
 
+setTimeout(() => {
+        document.body.style.overflowY = "auto";
+    }, 3000);
+
 setTimeout(()=>{
     if(window.scrollY === 0) {
         scrollHint.classList.add("visible");
