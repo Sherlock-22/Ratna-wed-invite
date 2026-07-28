@@ -1,8 +1,6 @@
 const scrollHint = document.querySelector('.scroll-hint-cont');
 
-setTimeout(() => {
-        document.body.style.overflowY = "auto";
-    }, 3000);
+document.body.style.overflowY = 'auto'; 
 
 setTimeout(()=>{
     if(window.scrollY === 0) {
