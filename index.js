@@ -26,7 +26,7 @@ radios.forEach(radio => {
 
     radio.addEventListener("change", () => {
 
-        if (radio.value === "Yes" && radio.checked) {
+        if (radio.value === "Wedding" || radio.value === "Reception" && radio.checked) {
 
             guestInput.required = true;
             guestInput.disabled = false;
