@@ -69,7 +69,7 @@
     font-weight: 600;
     font-style: italic;
     color:#414651;
-    font-size:clamp(10px,1vw,14px;
+    font-size:clamp(10px,1vw,14px);
     text-align:center;
     margin:0;
 }
